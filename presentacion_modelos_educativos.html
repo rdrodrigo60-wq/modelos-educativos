@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos Educativos: Presentación Interactiva</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; }
+        .slide { display: none; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); max-width: 800px; margin: 0 auto 20px; }
+        .slide.active { display: block; }
+        h1, h2 { color: #333; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        .menu { text-align: center; margin-bottom: 20px; }
+        .menu button { margin: 5px; padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .menu button:hover { background: #0056b3; }
+        .reveal { cursor: pointer; color: blue; text-decoration: underline; }
+        .hidden { display: none; }
+        .color-green { color: green; }
+        .color-blue { color: blue; }
+        .color-yellow { color: yellow; }
+        .color-red { color: red; }
+        .color-orange { color: orange; }
+        .color-purple { color: purple; }
+        .color-black { color: black; }
+        .color-cyan { color: cyan; }
+        .color-brown { color: brown; }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button onclick="showSlide(1)">Inicio</button>
+        <button onclick="showSlide(2)">Menú Principal</button>
+        <button onclick="showSlide(3)">Modelos</button>
+        <button onclick="showSlide(8)">Aplicaciones al Rezago</button>
+        <button onclick="showSlide(11)">Convergencias/Discrepancias</button>
+        <button onclick="showSlide(14)">Conclusión</button>
+    </div>
+
+    <div id="slide1" class="slide active">
+        <h1>Explorando Modelos Educativos: Del Conductismo al Conectivismo</h1>
+        <h2>Aplicaciones al Rezago Educativo y Análisis de Convergencias/Discrepancias</h2>
+        <p>Basado en Modelos.docx – Interactúa para descubrir más</p>
+        <p>Haz clic en los botones del menú para navegar.</p>
+    </div>
+
+    <div id="slide2" class="slide">
+        <h2>Menú Interactivo Principal</h2>
+        <p>Navega libremente por los 5 modelos, ejemplos prácticos y análisis comparativos.</p>
+        <button onclick="showSlide(3)">Modelos Educativos</button>
+        <button onclick="showSlide(8)">Aplicaciones al Rezago</button>
+        <button onclick="showSlide(11)">Convergencias y Discrepancias</button>
+        <button onclick="showSlide(14)">Conclusión y Recursos</button>
+    </div>
+
+    <div id="slide3" class="slide">
+        <h2>Modelo Conductista</h2>
+        <table>
+            <tr><th>Aspecto</th><th>Alumno</th><th>Docente</th><th>Proceso E-A</th><th>Fundamentos</th></tr>
+            <tr><td>Descripción</td><td>Receptor pasivo de estímulos (tabula rasa); moldeable mediante condicionamiento.</td><td>Transmisor y controlador del aprendizaje; figura de autoridad que diseña y evalúa refuerzos.</td><td>Lineal y mecánico: estímulo-respuesta-refuerzo; centrado en la adquisición de hábitos mediante repetición y práctica drill.</td><td>Skinner (condicionamiento operante), Pavlov (condicionamiento clásico), Thorndike (ley del efecto).</td></tr>
+        </table>
+        <button onclick="showSlide(4)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide4" class="slide">
+        <h2>Modelo Constructivista</h2>
+        <table>
+            <tr><th>Aspecto</th><th>Alumno</th><th>Docente</th><th>Proceso E-A</th><th>Fundamentos</th></tr>
+            <tr><td>Descripción</td><td class="color-green">Constructor activo de su propio conocimiento; agente reflexivo que integra nuevas ideas a esquemas previos.</td><td class="color-blue">Facilitador y guía; promueve la autonomía y media en la zona de desarrollo proximal.</td><td class="color-yellow">Interactivo y no lineal: basado en la asimilación y acomodación; enfatiza la reflexión y la conexión con el contexto personal.</td><td>Piaget (etapas del desarrollo cognitivo), Vygotsky (zona de desarrollo próximo), Dewey (aprendizaje experiencial).</td></tr>
+        </table>
+        <button onclick="showSlide(5)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide5" class="slide">
+        <h2>Modelo Sociocrítico</h2>
+        <table>
+            <tr><th>Aspecto</th><th>Alumno</th><th>Docente</th><th>Proceso E-A</th><th>Fundamentos</th></tr>
+            <tr><td>Descripción</td><td class="color-green">Sujeto crítico y emancipado; agente de cambio social que cuestiona realidades opresivas.</td><td class="color-blue">Mediador dialógico y compañero; fomenta la conciencia crítica y la acción colectiva.</td><td class="color-yellow">Dialógico y transformador: centrado en la problematización social; integra teoría y práctica para la liberación.</td><td>Freire (pedagogía de la liberación), Giroux (pedagogía crítica), Apple (crítica cultural en educación).</td></tr>
+        </table>
+        <button onclick="showSlide(6)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide6" class="slide">
+        <h2>Modelo Conectivista</h2>
+        <table>
+            <tr><th>Aspecto</th><th>Alumno</th><th>Docente</th><th>Proceso E-A</th><th>Fundamentos</th></tr>
+            <tr><td>Descripción</td><td class="color-green">Nodo en una red de conexiones; aprendiz lifelong que gestiona flujos de información.</td><td class="color-blue">Curador de recursos y facilitador de redes; orienta conexiones más que transmite contenido.</td><td class="color-yellow">No lineal y distribuido: basado en la formación de patrones de conexión; colaborativo y adaptado a la era digital.</td><td>Siemens (conectivismo como teoría del aprendizaje digital), Downes (aprendizaje en red personal).</td></tr>
+        </table>
+        <button onclick="showSlide(7)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide7" class="slide">
+        <h2>Modelo Por Competencias</h2>
+        <table>
+            <tr><th>Aspecto</th><th>Alumno</th><th>Docente</th><th>Proceso E-A</th><th>Fundamentos</th></tr>
+            <tr><td>Descripción</td><td class="color-green">Aprendiz activo y orientado a metas; capaz de aplicar competencias en situaciones complejas.</td><td class="color-blue">Diseñador de situaciones de aprendizaje; evaluador del desempeño integral.</td><td class="color-yellow">Flexible y por proyectos: centrado en el desarrollo de competencias transversales; evalúa por evidencia de aplicación práctica.</td><td>Tardif (competencias en educación), Perrenoud (formación de competencias), Tobón (modelo integral de competencias).</td></tr>
+        </table>
+        <button onclick="showSlide(8)">Aplicaciones</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide8" class="slide">
+        <h2>Conductista vs. Rezago Educativo</h2>
+        <p>Rezago: Desfase en competencias por factores socioeconómicos.</p>
+        <ul>
+            <li>Programa de refuerzo intensivo con drills en habilidades básicas.</li>
+            <li>Ejemplo: Sesiones diarias con recompensas; reducir desfase en 20% en un trimestre.</li>
+        </ul>
+        <span class="reveal" onclick="toggleHidden(this.nextElementSibling)">Ver más detalles</span>
+        <div class="hidden">Usando puntos canjeables y pruebas estandarizadas.</div>
+        <button onclick="showSlide(9)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide9" class="slide">
+        <h2>Constructivista vs. Rezago Educativo</h2>
+        <p>Personalización mediante mapas conceptuales y grupos colaborativos.</p>
+        <ul>
+            <li>Ejemplo: Portafolios de proyectos para recuperar un año en seis meses.</li>
+        </ul>
+        <span class="reveal" onclick="toggleHidden(this.nextElementSibling)">Ver más detalles</span>
+        <div class="hidden">Ajustando zona de desarrollo próximo con andamiaje.</div>
+        <button onclick="showSlide(10)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide10" class="slide">
+        <h2>Sociocrítico vs. Rezago Educativo</h2>
+        <p>Problematización de desigualdades con círculos de diálogo.</p>
+        <ul>
+            <li>Ejemplo: Talleres de lectura crítica para empoderamiento colectivo.</li>
+        </ul>
+        <span class="reveal" onclick="toggleHidden(this.nextElementSibling)">Ver más detalles</span>
+        <div class="hidden">Campañas contra abandono escolar en barrios marginados.</div>
+        <button onclick="showSlide(11)">Siguiente</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide11" class="slide">
+        <h2>Convergencias entre Modelos</h2>
+        <ul>
+            <li class="color-green">🟢 Verde: Alumno activo/autónomo (Constructivista, Sociocrítico, Conectivista, Por competencias).</li>
+            <li class="color-blue">🔵 Azul: Docente como facilitador/mediador.</li>
+            <li class="color-yellow">🟡 Amarillo: Proceso interactivo/no lineal.</li>
+            <li class="color-red">🔴 Rojo: Elementos sociales/colaborativos.</li>
+        </ul>
+        <span class="reveal" onclick="toggleHidden(this.nextElementSibling)">Ejemplo híbrido</span>
+        <div class="hidden">Constructivista + Sociocrítico = Proyectos críticos colaborativos.</div>
+        <button onclick="showSlide(12)">Discrepancias</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide12" class="slide">
+        <h2>Discrepancias entre Modelos</h2>
+        <ul>
+            <li class="color-orange">🟠 Naranja: Agencia del alumno (Conductista vs. resto).</li>
+            <li class="color-purple">🟣 Púrpura: Rol del docente.</li>
+            <li class="color-black">⚫ Negro: Estructura del proceso.</li>
+            <li class="color-cyan">🔶 Cian: Énfasis social/ético.</li>
+            <li class="color-brown">🟤 Marrón: Base teórica.</li>
+        </ul>
+        <span class="reveal" onclick="toggleHidden(this.nextElementSibling)">Impacto práctico</span>
+        <div class="hidden">Conductista ofrece estructura pero limita autonomía.</div>
+        <button onclick="showSlide(13)">Integración</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide13" class="slide">
+        <h2>Integración Visual</h2>
+        <p>Mapa mental: Centro "Modelos Educativos", ramas a convergencias (sólidas) y discrepancias (punteadas).</p>
+        <p>Usa esta integración para enfoques híbridos en el rezago educativo.</p>
+        <button onclick="showSlide(14)">Conclusión</button> <button onclick="showSlide(2)">Menú</button>
+    </div>
+
+    <div id="slide14" class="slide">
+        <h2>Conclusión</h2>
+        <p>Los modelos convergen en agencia y colaboración para combatir el rezago; integra híbridos para contextos reales.</p>
+        <p>Prueba un enfoque híbrido en tu aula.</p>
+        <p>Referencias: Autores como Freire, Piaget. Fuente: Modelos.docx.</p>
+        <button onclick="showSlide(1)">Volver al Inicio</button>
+    </div>
+
+    <script>
+        function showSlide(n) {
+            document.querySelectorAll('.slide').forEach(slide => slide.classList.remove('active'));
+            document.getElementById('slide' + n).classList.add('active');
+        }
+        function toggleHidden(el) {
+            el.style.display = el.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
